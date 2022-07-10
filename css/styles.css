@@ -1,0 +1,159 @@
+:root {
+  --accent-color: #2196f3;
+}
+
+:root {
+  --another-color: #212121;
+}
+
+:root {
+  --subtitle-color: #757575;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* ======================== COMPONENTS ======================= */
+.body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--subtitle-color);
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+
+.title-all {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.text-detail {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--subtitle-color);
+}
+/* ======================== HEADER ======================== */
+.logo-link {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.accent-logo {
+  color: var(--accent-color);
+}
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--another-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.menu-list .menu-link.current {
+  color: var(--accent-color);
+}
+
+/* ======================== HERO ======================== */
+.section-hero {
+  background-color: #2f303a;
+}
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  /* color: #ffffff; */
+}
+
+.service-button:hover,
+.service-button:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  cursor: pointers;
+}
+
+/* ======================== Attention to detail ======================== */
+
+.subtitle-detail {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.text-detail {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--subtitle-color);
+}
+
+/* ======================== What are we doing ======================== */
+
+/* ======================== our team ======================== */
+
+.subtitle-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.text-team {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--subtitle-color);
+}
+
+/* ======================== footer ======================== */
+.footer {
+  background-color: #2f303a;
+}
