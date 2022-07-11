@@ -6,6 +6,7 @@
   --logo-color: #000000;
   --hero-footer-background: #2f303a;
   --team-background: #f5f4fa;
+  --contact-color-footer: rgba(255, 255, 255, 0.6);
 }
 
 .list {
@@ -182,6 +183,7 @@ body {
 }
 
 .text-footer {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -195,7 +197,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--contact-color-footer);
 }
 
 .contact-footer:hover,
