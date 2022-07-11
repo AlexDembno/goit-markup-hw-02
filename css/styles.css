@@ -1,17 +1,11 @@
 :root {
   --accent-color: #2196f3;
-}
-
-:root {
   --another-color: #212121;
-}
-
-:root {
   --subtitle-color: #757575;
-}
-
-:root {
   --headbg-color: #ffffff;
+  --logo-color: #000000;
+  --hero-footer-background: #2f303a;
+  --team-background: #f5f4fa;
 }
 
 .list {
@@ -22,7 +16,7 @@
 }
 
 /* ======================== COMPONENTS ======================= */
-.body {
+body {
   font-family: 'Roboto', sans-serif;
   color: var(--another-color);
 }
@@ -56,15 +50,16 @@
 }
 /* ======================== HEADER ======================== */
 .main-header {
-  background: #ffffff;
+  background-color: var(--headbg-color);
 }
 
 .logo-link {
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--logo-color);
 }
 .accent-logo {
   color: var(--accent-color);
@@ -82,51 +77,41 @@
   color: var(--accent-color);
 }
 
-.menu-list .menu-link.current {
+.menu-link.current {
   color: var(--accent-color);
 }
 
 /* ======================== HERO ======================== */
 .section-hero {
-  background-color: #2f303a;
+  background-color: var(--hero-footer-background);
 }
 .main-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* or 136% */
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  color: #ffffff;
+  color: var(--headbg-color);
 }
 
 .service-button:hover,
 .service-button:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--headbg-color);
 }
 
 .service-button {
-  cursor: pointer;
-}
-
-.service-button {
-  font-weight: 500;
+  font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-}
-.service-button {
   border: none;
+  cursor: pointer;
 }
 
 /* ======================== Attention to detail ======================== */
-.section-detail {
-  background: #eeeeee;
-}
 
 .title-hidden {
   position: absolute;
@@ -150,62 +135,93 @@
 .text-detail {
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
-
   letter-spacing: 0.03em;
-
   color: var(--subtitle-color);
 }
 
 /* ======================== What are we doing ======================== */
-.section-doing {
-  background: #e5e5e5;
-}
+
 /* ======================== our team ======================== */
 .section-team {
-  background: #f5f4fa;
+  background: var(--team-background);
 }
 
 .team-item {
-  background: #ffffff;
+  background: var(--headbg-color);
 }
 .subtitle-team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
   letter-spacing: 0.03em;
 }
 
 .text-team {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--subtitle-color);
 }
 
 /* ======================== footer ======================== */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--hero-footer-background);
 }
+
 .logo-footer {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--headbg-color);
 }
+
 .text-footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--headbg-color);
+}
+
+.contact-footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-footer:hover,
+.contact-footer:focus {
+  color: var(--accent-color);
 }
 
 /* ======================== portfolio ========================  */
 .section-button,
 .item-portfolio {
-  background-color: #ffffff;
+  background-color: var(--headbg-color);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--headbg-color);
+}
+
+.filter-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: none;
+  cursor: pointer;
 }
